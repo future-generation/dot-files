@@ -18,9 +18,6 @@ password(){ cat /dev/urandom | env LC_CTYPE=C tr -dc a-zA-Z0-9_- | head -c $1; e
 # Show Manpages as PDF in Preview:
 man2pdf() { man $1 -t | open -f -a Preview; };
 
-# wget Proxy definieren:
-#export http_proxy="192.168.168.2:8118"
-
 # DELUXE-USR-LOCAL-BIN-INSERT
 # (do not remove this comment)
 echo $PATH | grep -q -s "/usr/local/bin"
